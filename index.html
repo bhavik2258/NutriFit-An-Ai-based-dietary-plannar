@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutri Fit - Dietary Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>Nutri Fit Dietary Planner</h1>
+    <p>Personalized diet plans tailored for your unique needs</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      <h2>Get Started with Your Custom Plan</h2>
+
+      <form id="diet-form" class="diet-form">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" name="weight" placeholder="Enter your weight" required>
+
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" name="height" placeholder="Enter your height" required>
+
+        <label for="goal">Goal:</label>
+        <select id="goal" name="goal">
+          <option value="lose">Lose Weight</option>
+          <option value="maintain">Maintain Weight</option>
+          <option value="gain">Gain Weight</option>
+        </select>
+
+        <button type="button" onclick="generateDietPlan()">Get Diet Plan</button>
+      </form>
+
+      <div id="output" class="output">
+        <h3>Your Recommended Diet Plan</h3>
+        <div id="plan-details">Fill out the form and click "Get Diet Plan" to see results.</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Nutri Fit. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
